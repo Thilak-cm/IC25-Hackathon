@@ -2,8 +2,9 @@ import csv
 import random
 from flask import Flask, request, jsonify
 from datetime import datetime, timedelta
+from app import create_app
 
-app = Flask(__name__)
+app = create_app()
 
 # Global data structures to be populated from CSV
 VALID_LOT_NAMES = set()
@@ -61,14 +62,10 @@ def load_special_events(csv_path):
                 except ValueError as e:
                     print(f"Error parsing dates: {start_date_str}, {end_date_str} with error: {e}")
 
-@app.before_first_request
-def initialize_data():
-    """
-    Called once before the first request. Loads data from CSV files into global variables.
-    Replace the file paths below with the actual paths to your CSV files.
-    """
-    load_lots_permissions("data/InfoChallenge Dataset_ DOTS - Lots & Permissions.csv")
-    load_special_events("data/InfoChallenge Dataset_ DOTS - Special Events _ Construction.csv")
+# Initialize data at startup
+with app.app_context():
+    load_lots_permissions("data/Lots & Permissions.csv")
+    load_special_events("data/Special Events & Construction.csv")
 
 @app.route('/check_parking', methods=['POST'])
 def check_parking():
@@ -84,18 +81,18 @@ def check_parking():
     # 1) Check that the lot name is valid
     if lot_name not in VALID_LOT_NAMES:
         return jsonify({
-            "permission": "No",
-            "reason": f"Invalid lot name '{lot_name}'",
-            "fine": "$69"
-        }), 400
+            "status": "error",
+            "message": f"Invalid lot name '{lot_name}'",
+            "alternatives": list(VALID_LOT_NAMES)[:3]
+        })
 
     # 2) Check that the permit type is valid
     if license_plate_or_permit_type not in VALID_PERMIT_TYPES:
         return jsonify({
-            "permission": "No",
-            "reason": f"Invalid permit type '{license_plate_or_permit_type}'",
-            "fine": "$69"
-        }), 400
+            "status": "error",
+            "message": f"Invalid permit type '{license_plate_or_permit_type}'",
+            "alternatives": list(VALID_PERMIT_TYPES)[:3]
+        })
 
     # 3) Special event check:
     if date_time:
@@ -104,20 +101,23 @@ def check_parking():
         for event in SPECIAL_EVENTS:
             if event["date"] == date_part and event["lot_name"] == lot_name:
                 return jsonify({
-                    "permission": "No",
-                    "reason": "special event",
-                    "fine": "$10"
+                    "status": "denied",
+                    "message": "Special event in progress",
+                    "alternatives": list(VALID_LOT_NAMES)[:3]
                 })
 
     # 4) If none of the above is triggered, return random yes/no decision
     decision = random.choice([True, False])
     if decision:
-        return jsonify({"permission": "Yes"})
+        return jsonify({
+            "status": "allowed",
+            "message": f"You can park in {lot_name}"
+        })
     else:
         return jsonify({
-            "permission": "No",
-            "reason": "random",
-            "fine": "$69"
+            "status": "denied",
+            "message": "Parking not allowed",
+            "alternatives": list(VALID_LOT_NAMES)[:3]
         })
 
 # New GET endpoint to retrieve valid lot names
@@ -130,6 +130,26 @@ def get_lot_names():
 def get_permit_types():
     return jsonify(sorted(list(VALID_PERMIT_TYPES)))
 
+# Load parking data
+def load_parking_data():
+    lots = {}
+    try:
+        with open('data/Lots & Permissions.csv', 'r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                lot_name = row.get("Parking Lot / Zone Name", "").strip()
+                if lot_name:
+                    lots[lot_name] = row
+        return lots
+    except FileNotFoundError:
+        print("Error: Could not find the Lots & Permissions CSV file")
+        return {}
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=2000, debug=True)
+    try:
+        app.parking_lots = load_parking_data()  # Make data available to app
+        print(f"Successfully loaded {len(app.parking_lots)} parking lots")
+        app.run(host='0.0.0.0', port=2000, debug=True)
+    except Exception as e:
+        print(f"Error starting application: {e}")
 
