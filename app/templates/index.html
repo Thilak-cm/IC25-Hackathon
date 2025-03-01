@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h1>UMD Parking Assistant</h1>
+    <div class="parking-form">
+        <div class="form-group">
+            <label for="license-plate">License Plate:</label>
+            <input type="text" id="license-plate" placeholder="MD 1234" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="lot-name">Parking Lot:</label>
+            <input type="text" id="lot-name" placeholder="Lot 1" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="user-type">I am a:</label>
+            <select id="user-type" required>
+                <option value="student">Student</option>
+                <option value="faculty">Faculty/Staff</option>
+                <option value="visitor">Visitor</option>
+            </select>
+        </div>
+        
+        <button onclick="checkParking()">Check Parking</button>
+    </div>
+    
+    <div id="result" class="result-container hidden"></div>
+</div>
+{% endblock %} 
