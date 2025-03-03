@@ -1,0 +1,362 @@
+lot_name,enforcement_hours
+A,Restricted after 4PM
+A,Restricted after 4PM
+A,Restricted after 4PM
+AA,Special Restrictions
+AA,Special Restrictions
+AA,Special Restrictions
+B,Unrestricted after 4PM
+BB,Special Restrictions
+BB,Special Restrictions
+BB,Special Restrictions
+C1,Unrestricted after 4PM
+C2,Unrestricted after 4PM
+CC,Unrestricted after 4PM
+DD,Restricted after 4PM
+DD,Restricted after 4PM
+DD,Restricted after 4PM
+E,Special Restrictions
+E,Special Restrictions
+E,Special Restrictions
+ERC,Visitor
+F,24-Hour restricted
+F,24-Hour restricted
+F,24-Hour restricted
+FF,Unrestricted after 4PM
+G,24-Hour restricted
+GG,Restricted after 4PM
+GG,Restricted after 4PM
+GG,Restricted after 4PM
+GG2,Special Restrictions
+HC,24-Hour restricted
+HH,Restricted after 4PM
+HH,Restricted after 4PM
+HH,Restricted after 4PM
+HH,Restricted after 4PM
+II,24-Hour restricted
+II,24-Hour restricted
+II,24-Hour restricted
+J,Unrestricted after 4PM
+JJ1,24-Hour restricted
+JJ3,Unrestricted after 4PM
+K,Miscellaneous Permissions
+KK,Special Restrictions
+L,Unrestricted after 4PM
+LL,24-Hour restricted
+LL,24-Hour restricted
+LL,24-Hour restricted
+Lot 10a,Unrestricted after 4PM
+Lot 10a,Unrestricted after 4PM
+Lot 10a,Unrestricted after 4PM
+Lot 10a,Unrestricted after 4PM
+Lot 11b,Unrestricted after 4PM
+Lot 11b,Unrestricted after 4PM
+Lot 11b,Unrestricted after 4PM
+Lot 11b,Unrestricted after 4PM
+Lot 11b,Unrestricted after 4PM
+Lot 11b,Unrestricted after 4PM
+Lot 15,24-Hour restricted
+Lot 16a,24-Hour restricted
+Lot 16b,24-Hour restricted
+Lot 16f,24-Hour restricted
+Lot 17a,24-Hour restricted
+Lot 17b,24-Hour restricted
+Lot 17c,24-Hour restricted
+Lot 17d,24-Hour restricted
+Lot 19,24-Hour restricted
+Lot 1b,Unrestricted after 4PM
+Lot 1b,Unrestricted after 4PM
+Lot 1b,Unrestricted after 4PM
+Lot 1b,Unrestricted after 4PM
+Lot 1b,Unrestricted after 4PM
+Lot 1b,Unrestricted after 4PM
+Lot 1c,Unrestricted after 4PM
+Lot 1c,Unrestricted after 4PM
+Lot 1c,Unrestricted after 4PM
+Lot 1c,Unrestricted after 4PM
+Lot 1c,Unrestricted after 4PM
+Lot 1c,Unrestricted after 4PM
+Lot 1d,Unrestricted after 4PM
+Lot 1d,Unrestricted after 4PM
+Lot 1d,Unrestricted after 4PM
+Lot 1d,Unrestricted after 4PM
+Lot 1d,Unrestricted after 4PM
+Lot 1d,Unrestricted after 4PM
+Lot 1e,Unrestricted after 4PM
+Lot 1e,Unrestricted after 4PM
+Lot 1e,Unrestricted after 4PM
+Lot 1e,Unrestricted after 4PM
+Lot 1e,Unrestricted after 4PM
+Lot 1e,Unrestricted after 4PM
+Lot 1f,Unrestricted after 4PM
+Lot 1f,Unrestricted after 4PM
+Lot 1f,Unrestricted after 4PM
+Lot 1f,Unrestricted after 4PM
+Lot 1f,Unrestricted after 4PM
+Lot 1f,Unrestricted after 4PM
+Lot 2a,24-Hour restricted
+Lot 2b,24-Hour restricted
+Lot 2f,24-Hour restricted
+Lot 3 (NEW),24-Hour restricted
+Lot 3 (NEW),24-Hour restricted
+Lot 3 (NEW),24-Hour restricted
+Lot 3 (NEW),24-Hour restricted
+Lot 3 (OLD),24-Hour restricted
+Lot 4a,Unrestricted after 4PM
+Lot 4a,Unrestricted after 4PM
+Lot 4a,Unrestricted after 4PM
+Lot 4a,Unrestricted after 4PM
+Lot 4a,Unrestricted after 4PM
+Lot 4a,Unrestricted after 4PM
+Lot 4b,Unrestricted after 4PM
+Lot 4b,Unrestricted after 4PM
+Lot 4b,Unrestricted after 4PM
+Lot 4b,Unrestricted after 4PM
+Lot 4b,Unrestricted after 4PM
+Lot 4b,Unrestricted after 4PM
+Lot 4h,Unrestricted after 4PM
+Lot 4h,Unrestricted after 4PM
+Lot 4h,Unrestricted after 4PM
+Lot 4h,Unrestricted after 4PM
+Lot 4h,Unrestricted after 4PM
+Lot 4k,Unrestricted after 4PM
+Lot 4m,Unrestricted after 4PM
+Lot 4m,Unrestricted after 4PM
+Lot 4m,Unrestricted after 4PM
+Lot 4m,Unrestricted after 4PM
+Lot 4m,Unrestricted after 4PM
+Lot 4m,Unrestricted after 4PM
+Lot 4n,Unrestricted after 4PM
+Lot 4n,Unrestricted after 4PM
+Lot 4n,Unrestricted after 4PM
+Lot 4n,Unrestricted after 4PM
+Lot 4n,Unrestricted after 4PM
+Lot 4n,Unrestricted after 4PM
+Lot 6,Unrestricted after 4PM
+Lot 6,Unrestricted after 4PM
+Lot 6,Unrestricted after 4PM
+Lot 6,Unrestricted after 4PM
+Lot 6,Unrestricted after 4PM
+Lot 6,Unrestricted after 4PM
+Lot 8,24-Hour restricted
+Lot 9b,Unrestricted after 4PM
+Lot 9b,Unrestricted after 4PM
+Lot 9b,Unrestricted after 4PM
+Lot 9b,Unrestricted after 4PM
+Lot 9b,Unrestricted after 4PM
+Lot 9b,Unrestricted after 4PM
+Lot V,Unrestricted after 4PM
+R2,24-Hour restricted
+MM,24-Hour restricted
+MM,24-Hour restricted
+MM,24-Hour restricted
+Meter/Pay Station Area,Visitor
+Motorcycle,Miscellaneous Permissions
+Mowatt Lane Garage,Miscellaneous Permissions
+Mowatt Visitor,Visitor
+N1/4/6/8/9,24-Hour restricted
+N1/4/6/8/9,24-Hour restricted
+N1/4/6/8/9,24-Hour restricted
+N3/7,Restricted after 4PM
+N3/7,Restricted after 4PM
+N3/7,Restricted after 4PM
+N5,Unrestricted after 4PM
+N5,Unrestricted after 4PM
+N5,Unrestricted after 4PM
+NN,Unrestricted after 4PM
+O1/3,Restricted after 4PM
+O1/3,Restricted after 4PM
+O1/3,Restricted after 4PM
+O5,Unrestricted after 4PM
+P,Unrestricted after 4PM
+PH1,Unrestricted after 4PM
+PH2,24-Hour restricted
+PH2,24-Hour restricted
+Q,Unrestricted after 4PM
+Q,Unrestricted after 4PM
+Q,Unrestricted after 4PM
+Q1,Modified restricted
+Q1,Modified restricted
+Q1,Modified restricted
+QQ,Restricted after 4PM
+QQ,Restricted after 4PM
+QQ,Restricted after 4PM
+R,24-Hour restricted
+R,24-Hour restricted
+R,24-Hour restricted
+RR,Unrestricted after 4PM
+Regents Drive Garage,Unrestricted after 4PM
+S3/4,Restricted after 4PM
+S3/4,Restricted after 4PM
+S3/4,Restricted after 4PM
+S7/8,24-Hour restricted
+S7/8,24-Hour restricted
+S7/8,24-Hour restricted
+S9,Unrestricted after 4PM
+S9,Unrestricted after 4PM
+S9,Unrestricted after 4PM
+SA,Miscellaneous Permissions
+SDG,24-Hour restricted
+SDStar,Miscellaneous Permissions
+SS,24-Hour restricted
+SS,24-Hour restricted
+SS,24-Hour restricted
+Stadium Drive Garage,Miscellaneous Permissions
+Stadium Drive Garage,Miscellaneous Permissions
+Student Summer,
+T,Restricted after 4PM
+T,Restricted after 4PM
+T,Restricted after 4PM
+TT,24-Hour restricted
+TT,24-Hour restricted
+TT,24-Hour restricted
+TV,Special Restrictions
+TV,Special Restrictions
+TV,Special Restrictions
+U1,24-Hour restricted
+U2,Unrestricted after 4PM
+UU,Unrestricted after 4PM
+Union Lane Garage,Miscellaneous Permissions
+V,Unrestricted after 4PM
+VM,Miscellaneous Permissions
+W,Restricted after 4PM
+W,Restricted after 4PM
+W,Restricted after 4PM
+W2,Miscellaneous Permissions
+W2,Miscellaneous Permissions
+W2,Miscellaneous Permissions
+X,Unrestricted after 4PM
+XX,Unrestricted after 4PM
+Xfinity Visitor Lot,Visitor
+Y,Modified restricted
+Y,Modified restricted
+Y,Modified restricted
+Y,Modified restricted
+YC,Special Restrictions
+YY,Unrestricted after 4PM
+Z,Unrestricted after 4PM
+A.V. Williams Bldg,Miscellaneous Permissions
+Administrative Bldg,Miscellaneous Permissions
+Allegany Hall,Miscellaneous Permissions
+Alumni Center,Miscellaneous Permissions
+Animal Science Bldg,Miscellaneous Permissions
+Annapolis Hall,Miscellaneous Permissions
+Anne Arundel Hall,Miscellaneous Permissions
+Baltimore Hall,Miscellaneous Permissions
+Bel Air Hall,Miscellaneous Permissions
+Benjamin Bldg,Miscellaneous Permissions
+Biology Psychology Bldg,Miscellaneous Permissions
+Bioscience Research Bldg,Miscellaneous Permissions
+Calvert Hall,Miscellaneous Permissions
+Campus Drive,Miscellaneous Permissions
+Carroll Hall,Miscellaneous Permissions
+Cecil Hall,Miscellaneous Permissions
+Centreville Hall,Miscellaneous Permissions
+Chapel Hill,Miscellaneous Permissions
+Chapel Meters,Miscellaneous Permissions
+Charles Hall,Miscellaneous Permissions
+Chemistry Bldg,Miscellaneous Permissions
+Chesapeake Bldg,Miscellaneous Permissions
+Chestertown Hall,Miscellaneous Permissions
+Clarice Smith Center,Miscellaneous Permissions
+Cole Field House,Miscellaneous Permissions
+Commons 1,Miscellaneous Permissions
+Commons 2,Miscellaneous Permissions
+Commons 3,Miscellaneous Permissions
+Commons 4,Miscellaneous Permissions
+Commons 5,Miscellaneous Permissions
+Commons 6,Miscellaneous Permissions
+Commons 7,Miscellaneous Permissions
+Computer Science Bldg,Miscellaneous Permissions
+Courtyards,Miscellaneous Permissions
+Cumberland Hall,Miscellaneous Permissions
+Denton Hall,Miscellaneous Permissions
+Dorchester Hall,Miscellaneous Permissions
+Easton Hall,Miscellaneous Permissions
+Edward St. John Bldg,Miscellaneous Permissions
+Elkton Hall,Miscellaneous Permissions
+Ellicott Hall,Miscellaneous Permissions
+Ellicott Visitor,Miscellaneous Permissions
+Francis Scott Key Hall,Miscellaneous Permissions
+Frederick Hall,Miscellaneous Permissions
+Garrett Hall,Miscellaneous Permissions
+Geology Bldg,Miscellaneous Permissions
+Glenn Martin Hall,Miscellaneous Permissions
+H. J. Patterson Hall,Miscellaneous Permissions
+Hagerstown Hall,Miscellaneous Permissions
+Harford Hall,Miscellaneous Permissions
+Health Center,Miscellaneous Permissions
+Hornbake Library,Miscellaneous Permissions
+Howard Hall,Miscellaneous Permissions
+J. M. Patterson Bldg,Miscellaneous Permissions
+Jimenez Hall,Miscellaneous Permissions
+Kim Engineering Bldg,Miscellaneous Permissions
+LaPlata Hall,Miscellaneous Permissions
+Lee Bldg,Miscellaneous Permissions
+Leonardtown,Miscellaneous Permissions
+Library Lane,Miscellaneous Permissions
+Lot 12A,Miscellaneous Permissions
+Lot 14A,Miscellaneous Permissions
+Lot 14B,Miscellaneous Permissions
+Lot 14C,Miscellaneous Permissions
+Lot 22B,Miscellaneous Permissions
+Lot 22C,Miscellaneous Permissions
+Lot 24D,Miscellaneous Permissions
+Marie Mount Hall,Miscellaneous Permissions
+Maryland Stadium,Miscellaneous Permissions
+McKeldin Library,Miscellaneous Permissions
+Mitchell Bldg,Miscellaneous Permissions
+Montgomery Hall,Miscellaneous Permissions
+Morrill Hall,Miscellaneous Permissions
+Mowatt Lane,Miscellaneous Permissions
+North Gym,Miscellaneous Permissions
+Nyumburu Culture Center,Miscellaneous Permissions
+Oakland Hall,Miscellaneous Permissions
+P. Mitchell Art/Soc Bldg,Miscellaneous Permissions
+Paint Branch Drive,Miscellaneous Permissions
+Patuxent Bldg,Miscellaneous Permissions
+Physical Science Technology,Miscellaneous Permissions
+Plant Sciences Bldg,Miscellaneous Permissions
+Pocomoke Bldg,Miscellaneous Permissions
+Preinkert Field House,Miscellaneous Permissions
+Prince Frederick Hall,Miscellaneous Permissions
+Pyon-Chen,Miscellaneous Permissions
+Queen Anne's Hall,Miscellaneous Permissions
+Regents Drive,Miscellaneous Permissions
+Ritchie Colliseum,Miscellaneous Permissions
+Rossborough Drive,Miscellaneous Permissions
+Rossborough Inn,Miscellaneous Permissions
+Rossborough Lane,Miscellaneous Permissions
+SCUB 1,Miscellaneous Permissions
+SCUB 2,Miscellaneous Permissions
+SCUB 3,Miscellaneous Permissions
+SCUB 4,Miscellaneous Permissions
+SPH,Miscellaneous Permissions
+School of Public Health,Miscellaneous Permissions
+Seneca Bldg,Miscellaneous Permissions
+Severn Bldg,Miscellaneous Permissions
+Shipley Field,Miscellaneous Permissions
+Shoemaker Bldg,Miscellaneous Permissions
+Skinner Bldg,Miscellaneous Permissions
+Somerset Hall,Miscellaneous Permissions
+St. Mary's Hall,Miscellaneous Permissions
+Stadium Concourse,Miscellaneous Permissions
+Stadium Drive,Miscellaneous Permissions
+Stamp Student Union,Miscellaneous Permissions
+Susquehanna Hall,Miscellaneous Permissions
+Symons Hall,Miscellaneous Permissions
+Systems Administration Bldg,Miscellaneous Permissions
+Taliaferro Hall,Miscellaneous Permissions
+Tawes Hall,Miscellaneous Permissions
+Technology Drive,Miscellaneous Permissions
+Terrrapin Trail Garage,Miscellaneous Permissions
+Turner Hall,Miscellaneous Permissions
+Union Lane,Miscellaneous Permissions
+Valley Drive,Miscellaneous Permissions
+Van Munching Hall,Miscellaneous Permissions
+Visitor Center,Miscellaneous Permissions
+Washington Hall,Miscellaneous Permissions
+Wicomico Hall,Miscellaneous Permissions
+Woods Hall,Miscellaneous Permissions
+Worchester Hall,Miscellaneous Permissions
+Young Children Center,Miscellaneous Permissions
