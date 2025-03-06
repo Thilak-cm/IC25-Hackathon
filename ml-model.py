@@ -6,12 +6,32 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 import numpy as np
-
+from datetime import datetime, timedelta, time
 # Load the dataset
 data = pd.read_csv('data/Lots_Permissions_CH5_fakedata (1).csv')
 
+# Convert time string to datetime.time object
+def str_to_time(time_str):
+    return datetime.strptime(time_str, '%H:%M:%S').time()
+
+# Adjust the subtract_one_second function
+def subtract_one_second(t):
+    if t == time(0, 0, 0):  # Check if it's midnight
+        return time(23, 59, 59)
+    else:
+        return (datetime.combine(datetime.min, t) - timedelta(seconds=1)).time()
+
+# Convert time columns to datetime.time objects
+data['End Time - Daily'] = data['End Time - Daily'].apply(str_to_time)
+
+# Apply the subtract_one_second function
+data['End Time - Daily'] = data['End Time - Daily'].apply(subtract_one_second)
+
+# Convert 'End Time - Daily' back to string format if needed
+data['End Time - Daily'] = data['End Time - Daily'].astype(str)
+
 # Define input features
-input_features = ['Lot Type', 'Physical Location (Yes/No)', 'Lot Name', 'Posted Restrictions', 'Enforcement Days', 'Start Time - Daily', 'End Time - Daily']
+input_features = ['Lot Name', 'Enforcement Days', 'Start Time - Daily', 'End Time - Daily']
 
 # Determine the output columns
 start_col = data.columns.get_loc('17FAE')
@@ -35,7 +55,7 @@ X = data[input_features]
 y = data[output_columns].fillna(0).astype(int)
 
 # One-hot encode categorical features
-categorical_features = ['Lot Type', 'Physical Location (Yes/No)', 'Lot Name', 'Posted Restrictions', 'Enforcement Days']
+categorical_features = ['Lot Name', 'Enforcement Days']
 preprocessor = ColumnTransformer(
     transformers=[
         ('cat', OneHotEncoder(), categorical_features)
@@ -66,6 +86,7 @@ print(f"Test Accuracy: {accuracy}")
 # Select a random test example for inference
 random_index = np.random.choice(test_indices)
 X_single_test = X.iloc[[random_index]]
+print(X_single_test)
 y_single_test = y.iloc[[random_index]]
 
 # Predict for the random test example
@@ -83,3 +104,10 @@ print(predicted_permits)
 # Display the number of valid permits
 num_valid_permits = sum(y_single_pred[0])
 print(f"\nNumber of Valid Permits: {num_valid_permits}")
+
+import pickle
+
+# Export the trained model to a pickle file
+with open('trained_model.pkl', 'wb') as model_file:
+    pickle.dump(pipeline, model_file)
+
