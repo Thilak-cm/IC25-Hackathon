@@ -46,3 +46,7 @@
 .hidden {
     display: none;
 }
+
+.error-text {
+    color: red;
+}
